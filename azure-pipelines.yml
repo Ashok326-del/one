@@ -2,7 +2,7 @@ trigger:
 - main
 
 pool:
-  vmImage: ubuntu-latest
+  name: flm-pool
 
 steps:
 - script: echo Hello, world!
@@ -15,3 +15,6 @@ steps:
 
 - script: echo hello ashok
   displayName: ashok
+
+- script: echo this is running in flm pool 
+  displayName: flm-pool
